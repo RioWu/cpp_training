@@ -4,6 +4,7 @@ int main(int argc, char const* argv[]) {
     int* p = &const_int;
     *p = 5;
     printf("%d\n", *p);
+    printf("%d\n",const_int);
     return 0;
 }
 /*

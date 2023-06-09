@@ -18,7 +18,7 @@ class Base {
 };
 
 struct Derivedstruct : Base {
-    // 默认为公有继承
+    // struct的继承默认为公有继承，struct的成员默认是公有成员
     void accessBaseMembers() {
         publicMethod();     // 可以访问基类的公有成员
         protectedMethod();  // 可以访问基类的保护成员
@@ -27,7 +27,7 @@ struct Derivedstruct : Base {
 };
 
 class Derivedclass : Base {
-    // 默认私有继承
+    // class的继承默认为私有继承，class的成员默认是私有成员
    public:
     void accessBaseMembers() {
         publicMethod();     // 可以访问基类的公有成员
